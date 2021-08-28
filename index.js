@@ -1,4 +1,4 @@
-// selecting element
+
 const form = document.forms[0];
 const inputDate = document.querySelector("#date");
 const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -61,7 +61,7 @@ function checkPalindromeForAllFormate(date) {
     return flag;
 }
 
-//checking leapyear
+// for checking it's a leap year or not
 function leapYear(year) {
     if (year % 400 === 0) {
         return trur
@@ -75,7 +75,7 @@ function leapYear(year) {
     return false;
 }
 
-// find next date
+// find next date for palindrome
 function findNextDate(date) {
     var day = date.day + 1;
     var month = date.month;
@@ -129,7 +129,7 @@ function getNextPalindromeDate(date) {
     return [ctr, nextDate]
 }
 
-// add event listner to form 
+// add event listner to form submit button
 form.addEventListener('submit', clickHandler)
 
 function clickHandler(e) {
